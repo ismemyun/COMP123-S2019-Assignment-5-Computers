@@ -87,7 +87,7 @@
             this.ProductNameLabel.Name = "ProductNameLabel";
             this.ProductNameLabel.Size = new System.Drawing.Size(271, 16);
             this.ProductNameLabel.TabIndex = 19;
-            this.ProductNameLabel.Text = "Product Name";
+            this.ProductNameLabel.Text = "System Name";
             this.ProductNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // VersionLabel
