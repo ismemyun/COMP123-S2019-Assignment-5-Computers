@@ -73,6 +73,8 @@
             // 
             // ProductDataGridView
             // 
+            this.ProductDataGridView.AllowUserToAddRows = false;
+            this.ProductDataGridView.AllowUserToDeleteRows = false;
             this.ProductDataGridView.AllowUserToResizeColumns = false;
             this.ProductDataGridView.AllowUserToResizeRows = false;
             this.ProductDataGridView.AutoGenerateColumns = false;
@@ -114,6 +116,7 @@
             this.ProductDataGridView.DataSource = this.productBindingSource;
             this.ProductDataGridView.Location = new System.Drawing.Point(11, 62);
             this.ProductDataGridView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ProductDataGridView.MultiSelect = false;
             this.ProductDataGridView.Name = "ProductDataGridView";
             this.ProductDataGridView.ReadOnly = true;
             this.ProductDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -397,7 +400,7 @@
             // 
             // SelectionTextBox
             // 
-            this.SelectionTextBox.Font = new System.Drawing.Font("新細明體", 20F);
+            this.SelectionTextBox.Font = new System.Drawing.Font("PMingLiU", 20F);
             this.SelectionTextBox.Location = new System.Drawing.Point(221, 331);
             this.SelectionTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SelectionTextBox.Name = "SelectionTextBox";

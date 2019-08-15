@@ -36,7 +36,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Program.aboutForm.Show();
+            Program.aboutForm.ShowDialog();
         }
 
 

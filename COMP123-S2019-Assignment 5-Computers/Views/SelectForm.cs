@@ -38,5 +38,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             Program.productInfoForm.Show();
             this.Hide();
         }
+
+
     }
 }
