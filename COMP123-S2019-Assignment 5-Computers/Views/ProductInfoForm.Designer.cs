@@ -73,7 +73,8 @@
             this.SelectAnotherButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
-            this.ProduecInfoOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ProduceInfoOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ProductInfoSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ProductInfoMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.TechSpecsGroupBox.SuspendLayout();
@@ -106,20 +107,21 @@
             // ProductInfoOpenToolStripMenuItem
             // 
             this.ProductInfoOpenToolStripMenuItem.Name = "ProductInfoOpenToolStripMenuItem";
-            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProductInfoOpenToolStripMenuItem.Text = "&Open";
             this.ProductInfoOpenToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoOpenToolStripMenuItem_Click);
             // 
             // ProductInfoSaveToolStripMenuItem
             // 
             this.ProductInfoSaveToolStripMenuItem.Name = "ProductInfoSaveToolStripMenuItem";
-            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProductInfoSaveToolStripMenuItem.Text = "&Save";
+            this.ProductInfoSaveToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoSaveToolStripMenuItem_Click);
             // 
             // ProduectInfoExitToolStripMenuItem
             // 
             this.ProduectInfoExitToolStripMenuItem.Name = "ProduectInfoExitToolStripMenuItem";
-            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProduectInfoExitToolStripMenuItem.Text = "&Exit";
             this.ProduectInfoExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -140,7 +142,7 @@
             // 
             // ProductIDLabel
             // 
-            this.ProductIDLabel.Location = new System.Drawing.Point(66, 62);
+            this.ProductIDLabel.Location = new System.Drawing.Point(64, 62);
             this.ProductIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProductIDLabel.Name = "ProductIDLabel";
             this.ProductIDLabel.Size = new System.Drawing.Size(95, 18);
@@ -169,25 +171,25 @@
             // 
             // ModelTextBox
             // 
-            this.ModelTextBox.Location = new System.Drawing.Point(394, 98);
+            this.ModelTextBox.Location = new System.Drawing.Point(388, 95);
             this.ModelTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ModelTextBox.Name = "ModelTextBox";
             this.ModelTextBox.ReadOnly = true;
-            this.ModelTextBox.Size = new System.Drawing.Size(428, 27);
+            this.ModelTextBox.Size = new System.Drawing.Size(430, 27);
             this.ModelTextBox.TabIndex = 3;
             // 
             // OSTextBox
             // 
-            this.OSTextBox.Location = new System.Drawing.Point(394, 42);
+            this.OSTextBox.Location = new System.Drawing.Point(388, 42);
             this.OSTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.OSTextBox.Name = "OSTextBox";
             this.OSTextBox.ReadOnly = true;
-            this.OSTextBox.Size = new System.Drawing.Size(428, 27);
+            this.OSTextBox.Size = new System.Drawing.Size(430, 27);
             this.OSTextBox.TabIndex = 3;
             // 
             // ManufacturerTextBox
             // 
-            this.ManufacturerTextBox.Location = new System.Drawing.Point(146, 95);
+            this.ManufacturerTextBox.Location = new System.Drawing.Point(139, 95);
             this.ManufacturerTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ManufacturerTextBox.Name = "ManufacturerTextBox";
             this.ManufacturerTextBox.ReadOnly = true;
@@ -196,7 +198,7 @@
             // 
             // PlatformTextBox
             // 
-            this.PlatformTextBox.Location = new System.Drawing.Point(146, 42);
+            this.PlatformTextBox.Location = new System.Drawing.Point(139, 42);
             this.PlatformTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PlatformTextBox.Name = "PlatformTextBox";
             this.PlatformTextBox.ReadOnly = true;
@@ -205,7 +207,7 @@
             // 
             // ModelLabel
             // 
-            this.ModelLabel.Location = new System.Drawing.Point(330, 101);
+            this.ModelLabel.Location = new System.Drawing.Point(324, 101);
             this.ModelLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ModelLabel.Name = "ModelLabel";
             this.ModelLabel.Size = new System.Drawing.Size(56, 18);
@@ -214,7 +216,7 @@
             // 
             // OSLabel
             // 
-            this.OSLabel.Location = new System.Drawing.Point(353, 45);
+            this.OSLabel.Location = new System.Drawing.Point(347, 45);
             this.OSLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.OSLabel.Name = "OSLabel";
             this.OSLabel.Size = new System.Drawing.Size(33, 18);
@@ -223,7 +225,7 @@
             // 
             // ManufacturerLabel
             // 
-            this.ManufacturerLabel.Location = new System.Drawing.Point(21, 101);
+            this.ManufacturerLabel.Location = new System.Drawing.Point(19, 101);
             this.ManufacturerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ManufacturerLabel.Name = "ManufacturerLabel";
             this.ManufacturerLabel.Size = new System.Drawing.Size(117, 18);
@@ -232,7 +234,7 @@
             // 
             // PlatformLabel
             // 
-            this.PlatformLabel.Location = new System.Drawing.Point(60, 45);
+            this.PlatformLabel.Location = new System.Drawing.Point(58, 45);
             this.PlatformLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PlatformLabel.Name = "PlatformLabel";
             this.PlatformLabel.Size = new System.Drawing.Size(78, 18);
@@ -241,7 +243,7 @@
             // 
             // ProductIDTextBox
             // 
-            this.ProductIDTextBox.Location = new System.Drawing.Point(169, 59);
+            this.ProductIDTextBox.Location = new System.Drawing.Point(162, 59);
             this.ProductIDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ProductIDTextBox.Name = "ProductIDTextBox";
             this.ProductIDTextBox.ReadOnly = true;
@@ -250,7 +252,7 @@
             // 
             // ConditionLabel
             // 
-            this.ConditionLabel.Location = new System.Drawing.Point(318, 62);
+            this.ConditionLabel.Location = new System.Drawing.Point(316, 62);
             this.ConditionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConditionLabel.Name = "ConditionLabel";
             this.ConditionLabel.Size = new System.Drawing.Size(91, 18);
@@ -259,7 +261,7 @@
             // 
             // ConditionTextBox
             // 
-            this.ConditionTextBox.Location = new System.Drawing.Point(417, 59);
+            this.ConditionTextBox.Location = new System.Drawing.Point(411, 59);
             this.ConditionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ConditionTextBox.Name = "ConditionTextBox";
             this.ConditionTextBox.ReadOnly = true;
@@ -317,34 +319,34 @@
             // 
             // WabcamTextBox
             // 
-            this.WabcamTextBox.Location = new System.Drawing.Point(642, 147);
+            this.WabcamTextBox.Location = new System.Drawing.Point(619, 147);
             this.WabcamTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.WabcamTextBox.Name = "WabcamTextBox";
             this.WabcamTextBox.ReadOnly = true;
-            this.WabcamTextBox.Size = new System.Drawing.Size(180, 27);
+            this.WabcamTextBox.Size = new System.Drawing.Size(199, 27);
             this.WabcamTextBox.TabIndex = 3;
             // 
             // GPUTypeTextBox
             // 
-            this.GPUTypeTextBox.Location = new System.Drawing.Point(642, 95);
+            this.GPUTypeTextBox.Location = new System.Drawing.Point(619, 95);
             this.GPUTypeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.GPUTypeTextBox.Name = "GPUTypeTextBox";
             this.GPUTypeTextBox.ReadOnly = true;
-            this.GPUTypeTextBox.Size = new System.Drawing.Size(180, 27);
+            this.GPUTypeTextBox.Size = new System.Drawing.Size(199, 27);
             this.GPUTypeTextBox.TabIndex = 3;
             // 
             // HDDTextBox
             // 
-            this.HDDTextBox.Location = new System.Drawing.Point(642, 42);
+            this.HDDTextBox.Location = new System.Drawing.Point(619, 42);
             this.HDDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.HDDTextBox.Name = "HDDTextBox";
             this.HDDTextBox.ReadOnly = true;
-            this.HDDTextBox.Size = new System.Drawing.Size(180, 27);
+            this.HDDTextBox.Size = new System.Drawing.Size(199, 27);
             this.HDDTextBox.TabIndex = 3;
             // 
             // CPUspeedTextBox
             // 
-            this.CPUspeedTextBox.Location = new System.Drawing.Point(417, 147);
+            this.CPUspeedTextBox.Location = new System.Drawing.Point(393, 147);
             this.CPUspeedTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CPUspeedTextBox.Name = "CPUspeedTextBox";
             this.CPUspeedTextBox.ReadOnly = true;
@@ -353,7 +355,7 @@
             // 
             // CPUnumberTextBox
             // 
-            this.CPUnumberTextBox.Location = new System.Drawing.Point(417, 95);
+            this.CPUnumberTextBox.Location = new System.Drawing.Point(393, 95);
             this.CPUnumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CPUnumberTextBox.Name = "CPUnumberTextBox";
             this.CPUnumberTextBox.ReadOnly = true;
@@ -362,7 +364,7 @@
             // 
             // LCDSizeTextBox
             // 
-            this.LCDSizeTextBox.Location = new System.Drawing.Point(417, 42);
+            this.LCDSizeTextBox.Location = new System.Drawing.Point(393, 42);
             this.LCDSizeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.LCDSizeTextBox.Name = "LCDSizeTextBox";
             this.LCDSizeTextBox.ReadOnly = true;
@@ -371,7 +373,7 @@
             // 
             // CPUTypeTextBox
             // 
-            this.CPUTypeTextBox.Location = new System.Drawing.Point(146, 147);
+            this.CPUTypeTextBox.Location = new System.Drawing.Point(139, 147);
             this.CPUTypeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CPUTypeTextBox.Name = "CPUTypeTextBox";
             this.CPUTypeTextBox.ReadOnly = true;
@@ -380,7 +382,7 @@
             // 
             // CPUBrandTextBox
             // 
-            this.CPUBrandTextBox.Location = new System.Drawing.Point(146, 95);
+            this.CPUBrandTextBox.Location = new System.Drawing.Point(139, 95);
             this.CPUBrandTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CPUBrandTextBox.Name = "CPUBrandTextBox";
             this.CPUBrandTextBox.ReadOnly = true;
@@ -389,7 +391,7 @@
             // 
             // MemoryTextBox
             // 
-            this.MemoryTextBox.Location = new System.Drawing.Point(146, 42);
+            this.MemoryTextBox.Location = new System.Drawing.Point(139, 42);
             this.MemoryTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.MemoryTextBox.Name = "MemoryTextBox";
             this.MemoryTextBox.ReadOnly = true;
@@ -398,7 +400,7 @@
             // 
             // WabcamLabel
             // 
-            this.WabcamLabel.Location = new System.Drawing.Point(559, 153);
+            this.WabcamLabel.Location = new System.Drawing.Point(539, 153);
             this.WabcamLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WabcamLabel.Name = "WabcamLabel";
             this.WabcamLabel.Size = new System.Drawing.Size(78, 18);
@@ -407,7 +409,7 @@
             // 
             // GPUTypeLabel
             // 
-            this.GPUTypeLabel.Location = new System.Drawing.Point(549, 101);
+            this.GPUTypeLabel.Location = new System.Drawing.Point(530, 101);
             this.GPUTypeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.GPUTypeLabel.Name = "GPUTypeLabel";
             this.GPUTypeLabel.Size = new System.Drawing.Size(88, 18);
@@ -416,7 +418,7 @@
             // 
             // CPUspeedLabel
             // 
-            this.CPUspeedLabel.Location = new System.Drawing.Point(313, 153);
+            this.CPUspeedLabel.Location = new System.Drawing.Point(292, 153);
             this.CPUspeedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CPUspeedLabel.Name = "CPUspeedLabel";
             this.CPUspeedLabel.Size = new System.Drawing.Size(96, 18);
@@ -425,7 +427,7 @@
             // 
             // CPUnumberLabel
             // 
-            this.CPUnumberLabel.Location = new System.Drawing.Point(298, 101);
+            this.CPUnumberLabel.Location = new System.Drawing.Point(278, 101);
             this.CPUnumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CPUnumberLabel.Name = "CPUnumberLabel";
             this.CPUnumberLabel.Size = new System.Drawing.Size(111, 18);
@@ -434,7 +436,7 @@
             // 
             // HDDLabel
             // 
-            this.HDDLabel.Location = new System.Drawing.Point(587, 45);
+            this.HDDLabel.Location = new System.Drawing.Point(570, 45);
             this.HDDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HDDLabel.Name = "HDDLabel";
             this.HDDLabel.Size = new System.Drawing.Size(47, 18);
@@ -443,7 +445,7 @@
             // 
             // LCDSizeLabel
             // 
-            this.LCDSizeLabel.Location = new System.Drawing.Point(327, 45);
+            this.LCDSizeLabel.Location = new System.Drawing.Point(307, 45);
             this.LCDSizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LCDSizeLabel.Name = "LCDSizeLabel";
             this.LCDSizeLabel.Size = new System.Drawing.Size(82, 18);
@@ -452,7 +454,7 @@
             // 
             // CPUTpyeLabel
             // 
-            this.CPUTpyeLabel.Location = new System.Drawing.Point(49, 153);
+            this.CPUTpyeLabel.Location = new System.Drawing.Point(47, 153);
             this.CPUTpyeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CPUTpyeLabel.Name = "CPUTpyeLabel";
             this.CPUTpyeLabel.Size = new System.Drawing.Size(89, 18);
@@ -461,7 +463,7 @@
             // 
             // CPUBrandLabel
             // 
-            this.CPUBrandLabel.Location = new System.Drawing.Point(37, 101);
+            this.CPUBrandLabel.Location = new System.Drawing.Point(35, 101);
             this.CPUBrandLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CPUBrandLabel.Name = "CPUBrandLabel";
             this.CPUBrandLabel.Size = new System.Drawing.Size(98, 18);
@@ -470,7 +472,7 @@
             // 
             // MemoryLabel
             // 
-            this.MemoryLabel.Location = new System.Drawing.Point(60, 45);
+            this.MemoryLabel.Location = new System.Drawing.Point(58, 45);
             this.MemoryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MemoryLabel.Name = "MemoryLabel";
             this.MemoryLabel.Size = new System.Drawing.Size(78, 18);
@@ -516,9 +518,9 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // ProduecInfoOpenFileDialog
+            // ProduceInfoOpenFileDialog
             // 
-            this.ProduecInfoOpenFileDialog.FileName = "openFileDialog1";
+            this.ProduceInfoOpenFileDialog.FileName = "openFileDialog1";
             // 
             // ProductInfoForm
             // 
@@ -606,6 +608,7 @@
         private System.Windows.Forms.Button SelectAnotherButton;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button NextButton;
-        private System.Windows.Forms.OpenFileDialog ProduecInfoOpenFileDialog;
+        private System.Windows.Forms.OpenFileDialog ProduceInfoOpenFileDialog;
+        private System.Windows.Forms.SaveFileDialog ProductInfoSaveFileDialog;
     }
 }

@@ -53,19 +53,19 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
         private void OpenFileDialog()
         {
             //configure the file dialog
-            ProduecInfoOpenFileDialog.FileName = "Product.txt";
-            ProduecInfoOpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-            ProduecInfoOpenFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            ProduceInfoOpenFileDialog.FileName = "Product.txt";
+            ProduceInfoOpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            ProduceInfoOpenFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
 
             //open the file dialog
-            var result = ProduecInfoOpenFileDialog.ShowDialog();
+            var result = ProduceInfoOpenFileDialog.ShowDialog();
             if (result != DialogResult.Cancel)
             {
                 try
                 {
                     //Open the stream for reading
                     using (StreamReader inputStream = new StreamReader(
-                        File.Open(ProduecInfoOpenFileDialog.FileName, FileMode.Open)))
+                        File.Open(ProduceInfoOpenFileDialog.FileName, FileMode.Open)))
                     {
                         //Program.student.id = int.Parse(inputStream.ReadLine());
                         //Program.student.StudentID = inputStream.ReadLine();
@@ -107,6 +107,38 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             HDDTextBox.Text = Program.product.HDD_size;
             GPUTypeTextBox.Text = Program.product.GPU_Type;
             WabcamTextBox.Text = Program.product.webcam;
+        }
+
+        private void ProductInfoSaveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //configure the file dialog
+            StudentSaveFileDialog.FileName = "Student.txt";
+            StudentSaveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            StudentSaveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+
+            //open the file dialog
+            var result = StudentSaveFileDialog.ShowDialog();
+            if (result != DialogResult.Cancel)
+            {
+                //open a stream to write
+                using (StreamWriter outputStream = new StreamWriter(
+                    File.Open(StudentSaveFileDialog.FileName, FileMode.Create)))
+
+                {
+                    //write stuff to the file
+                    outputStream.WriteLine(Program.student.id);
+                    outputStream.WriteLine(Program.student.StudentID);
+                    outputStream.WriteLine(Program.student.FirstName);
+                    outputStream.WriteLine(Program.student.LastName);
+
+                    //cleeanup
+                    outputStream.Close();
+                    outputStream.Dispose();
+
+                }
+                MessageBox.Show("File Saved SuccessFully!", "Saving...",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

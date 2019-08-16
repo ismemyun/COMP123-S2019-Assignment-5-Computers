@@ -73,6 +73,22 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             Program.product.HDD_size= cells[(int)ProductField.HDD_SIZE].Value.ToString();
             Program.product.GPU_Type = cells[(int)ProductField.GPU_TYPE].Value.ToString();
             Program.product.webcam = cells[(int)ProductField.WEBCAM].Value.ToString();
+
+            Program.product.RAM_type= cells[(int)ProductField.RAM_TYPE].Value.ToString();
+            Program.product.displaytype = cells[(int)ProductField.DISPLAYTYPE].Value.ToString();
+            Program.product.resolution = cells[(int)ProductField.RESOLUTION].Value.ToString();
+            Program.product.CPU_Class = cells[(int)ProductField.CPU_CLASS].Value.ToString();
+            Program.product.HDD_speed= cells[(int)ProductField.HDD_SPEED].Value.ToString();
+            Program.product.optical_drive= cells[(int)ProductField.OPTICAL_DRIVE].Value.ToString();
+            Program.product.Audio_type = cells[(int)ProductField.AUDIO_TYPE].Value.ToString();
+            Program.product.LAN = cells[(int)ProductField.LAN].Value.ToString();
+            Program.product.WIFI = cells[(int)ProductField.WIFI].Value.ToString();
+            Program.product.weight = cells[(int)ProductField.WEIGHT].Value.ToString();
+            Program.product.height= cells[(int)ProductField.HEIGHT].Value.ToString();
+            Program.product.depth = cells[(int)ProductField.DEPTH].Value.ToString();
+            Program.product.width = cells[(int)ProductField.WIDTH].Value.ToString();
+            Program.product.moust_type = cells[(int)ProductField.MOUST_TYPE].Value.ToString();
+            Program.product.power = cells[(int)ProductField.POWER].Value.ToString();
         }
     }
 }
