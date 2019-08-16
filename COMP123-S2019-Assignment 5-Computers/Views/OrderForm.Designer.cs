@@ -100,6 +100,7 @@
             this.PrintToolStripMenuItem,
             this.ExitToolStripMenuItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            this.FileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.FileToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.FileToolStripMenuItem.Text = "&FIle";
             // 
@@ -109,15 +110,16 @@
             this.PrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem";
             this.PrintToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.PrintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.PrintToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.PrintToolStripMenuItem.Text = "&Print";
             this.PrintToolStripMenuItem.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
             // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ExitToolStripMenuItem.Text = "&Exit";
+            this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.ExitToolStripMenuItem.Text = "E&xit";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // EditToolStripMenuItem
@@ -126,19 +128,20 @@
             this.toolStripSeparator4,
             this.backToolStripMenuItem});
             this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
+            this.EditToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.EditToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.EditToolStripMenuItem.Text = "&Edit";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(139, 6);
             // 
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
             this.backToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.backToolStripMenuItem.Text = "&Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.BackToolStripMenuItem_Click);
             // 
@@ -147,13 +150,15 @@
             this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AboutToolStripMenuItem});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
+            this.HelpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.HelpToolStripMenuItem.Text = "&Help";
             // 
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.AboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.AboutToolStripMenuItem.Text = "&About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -314,6 +319,7 @@
             // 
             // ModelTextBox
             // 
+            this.ModelTextBox.BackColor = System.Drawing.Color.White;
             this.ModelTextBox.Location = new System.Drawing.Point(122, 110);
             this.ModelTextBox.Name = "ModelTextBox";
             this.ModelTextBox.ReadOnly = true;
@@ -322,6 +328,7 @@
             // 
             // PlatformTextBox
             // 
+            this.PlatformTextBox.BackColor = System.Drawing.Color.White;
             this.PlatformTextBox.Location = new System.Drawing.Point(325, 36);
             this.PlatformTextBox.Name = "PlatformTextBox";
             this.PlatformTextBox.ReadOnly = true;
@@ -330,6 +337,7 @@
             // 
             // ManufacturerTextBox
             // 
+            this.ManufacturerTextBox.BackColor = System.Drawing.Color.White;
             this.ManufacturerTextBox.Location = new System.Drawing.Point(122, 76);
             this.ManufacturerTextBox.Name = "ManufacturerTextBox";
             this.ManufacturerTextBox.ReadOnly = true;
@@ -338,6 +346,7 @@
             // 
             // ConditionTextBox
             // 
+            this.ConditionTextBox.BackColor = System.Drawing.Color.White;
             this.ConditionTextBox.Location = new System.Drawing.Point(122, 36);
             this.ConditionTextBox.Name = "ConditionTextBox";
             this.ConditionTextBox.ReadOnly = true;
@@ -398,6 +407,7 @@
             // 
             // TatalTextBox
             // 
+            this.TatalTextBox.BackColor = System.Drawing.Color.White;
             this.TatalTextBox.Location = new System.Drawing.Point(135, 145);
             this.TatalTextBox.Name = "TatalTextBox";
             this.TatalTextBox.ReadOnly = true;
@@ -406,6 +416,7 @@
             // 
             // SalesTaxTextBox
             // 
+            this.SalesTaxTextBox.BackColor = System.Drawing.Color.White;
             this.SalesTaxTextBox.Location = new System.Drawing.Point(135, 81);
             this.SalesTaxTextBox.Name = "SalesTaxTextBox";
             this.SalesTaxTextBox.ReadOnly = true;
@@ -414,6 +425,7 @@
             // 
             // PriceTextBox
             // 
+            this.PriceTextBox.BackColor = System.Drawing.Color.White;
             this.PriceTextBox.Location = new System.Drawing.Point(135, 46);
             this.PriceTextBox.Name = "PriceTextBox";
             this.PriceTextBox.ReadOnly = true;
@@ -495,6 +507,7 @@
             // 
             // ComputerPictureBox
             // 
+            this.ComputerPictureBox.Image = global::COMP123_S2019_Assignment_5_Computers.Properties.Resources.computer02;
             this.ComputerPictureBox.Location = new System.Drawing.Point(493, 27);
             this.ComputerPictureBox.Name = "ComputerPictureBox";
             this.ComputerPictureBox.Size = new System.Drawing.Size(282, 179);

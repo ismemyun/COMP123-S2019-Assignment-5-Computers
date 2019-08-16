@@ -46,7 +46,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             OpenFileDialog();
             //OpenFileDialog(sender,e);
         }
-        private void OpenFileDialog()
+        public  void OpenFileDialog()
         {
             //configure the file dialog
             ProductInfoOpenFileDialog.FileName = "Product.txt";
@@ -124,7 +124,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
         {
             ProductIDTextBox.Text = Program.product.productID.ToString();
             ConditionTextBox.Text = Program.product.condition;
-            CostTextBox.Text = Program.product.cost.ToString();
+            CostTextBox.Text = ((double)Program.product.cost).ToString("$###,###.##");
             PlatformTextBox.Text = Program.product.platform;
             OSTextBox.Text = Program.product.OS;
             ManufacturerTextBox.Text = Program.product.manufacturer;

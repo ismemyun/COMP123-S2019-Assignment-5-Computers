@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ProductDataGridView = new System.Windows.Forms.DataGridView();
+            this.HDListLabel = new System.Windows.Forms.Label();
+            this.SelectionLabel = new System.Windows.Forms.Label();
+            this.SelectionTextBox = new System.Windows.Forms.TextBox();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,11 +67,6 @@
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.HDListLabel = new System.Windows.Forms.Label();
-            this.SelectionLabel = new System.Windows.Forms.Label();
-            this.SelectionTextBox = new System.Windows.Forms.TextBox();
-            this.CancelButton = new System.Windows.Forms.Button();
-            this.NextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -123,6 +123,65 @@
             this.ProductDataGridView.Size = new System.Drawing.Size(757, 227);
             this.ProductDataGridView.TabIndex = 0;
             this.ProductDataGridView.SelectionChanged += new System.EventHandler(this.ProductDataGridView_SelectionChanged);
+            // 
+            // HDListLabel
+            // 
+            this.HDListLabel.AutoSize = true;
+            this.HDListLabel.Font = new System.Drawing.Font("Verdana", 20F);
+            this.HDListLabel.Location = new System.Drawing.Point(14, 19);
+            this.HDListLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HDListLabel.Name = "HDListLabel";
+            this.HDListLabel.Size = new System.Drawing.Size(347, 32);
+            this.HDListLabel.TabIndex = 1;
+            this.HDListLabel.Text = "Computer Hardware List";
+            // 
+            // SelectionLabel
+            // 
+            this.SelectionLabel.AutoSize = true;
+            this.SelectionLabel.Font = new System.Drawing.Font("Verdana", 20F);
+            this.SelectionLabel.Location = new System.Drawing.Point(14, 331);
+            this.SelectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SelectionLabel.Name = "SelectionLabel";
+            this.SelectionLabel.Size = new System.Drawing.Size(207, 32);
+            this.SelectionLabel.TabIndex = 2;
+            this.SelectionLabel.Text = "Your Selection";
+            // 
+            // SelectionTextBox
+            // 
+            this.SelectionTextBox.BackColor = System.Drawing.Color.White;
+            this.SelectionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SelectionTextBox.Font = new System.Drawing.Font("Verdana", 16F);
+            this.SelectionTextBox.Location = new System.Drawing.Point(221, 331);
+            this.SelectionTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SelectionTextBox.Name = "SelectionTextBox";
+            this.SelectionTextBox.ReadOnly = true;
+            this.SelectionTextBox.Size = new System.Drawing.Size(547, 33);
+            this.SelectionTextBox.TabIndex = 3;
+            this.SelectionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Font = new System.Drawing.Font("Verdana", 20F);
+            this.CancelButton.Location = new System.Drawing.Point(462, 417);
+            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(136, 46);
+            this.CancelButton.TabIndex = 4;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // NextButton
+            // 
+            this.NextButton.Font = new System.Drawing.Font("Verdana", 20F);
+            this.NextButton.Location = new System.Drawing.Point(632, 417);
+            this.NextButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(136, 46);
+            this.NextButton.TabIndex = 4;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -376,62 +435,6 @@
             // productBindingSource
             // 
             this.productBindingSource.DataSource = typeof(COMP123_S2019_Assignment_5_Computers.Models.Product);
-            // 
-            // HDListLabel
-            // 
-            this.HDListLabel.AutoSize = true;
-            this.HDListLabel.Font = new System.Drawing.Font("Verdana", 20F);
-            this.HDListLabel.Location = new System.Drawing.Point(14, 19);
-            this.HDListLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.HDListLabel.Name = "HDListLabel";
-            this.HDListLabel.Size = new System.Drawing.Size(347, 32);
-            this.HDListLabel.TabIndex = 1;
-            this.HDListLabel.Text = "Computer Hardware List";
-            // 
-            // SelectionLabel
-            // 
-            this.SelectionLabel.AutoSize = true;
-            this.SelectionLabel.Font = new System.Drawing.Font("Verdana", 20F);
-            this.SelectionLabel.Location = new System.Drawing.Point(14, 336);
-            this.SelectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.SelectionLabel.Name = "SelectionLabel";
-            this.SelectionLabel.Size = new System.Drawing.Size(207, 32);
-            this.SelectionLabel.TabIndex = 2;
-            this.SelectionLabel.Text = "Your Selection";
-            // 
-            // SelectionTextBox
-            // 
-            this.SelectionTextBox.Font = new System.Drawing.Font("Verdana", 16F);
-            this.SelectionTextBox.Location = new System.Drawing.Point(221, 331);
-            this.SelectionTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SelectionTextBox.Name = "SelectionTextBox";
-            this.SelectionTextBox.ReadOnly = true;
-            this.SelectionTextBox.Size = new System.Drawing.Size(547, 33);
-            this.SelectionTextBox.TabIndex = 3;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.Font = new System.Drawing.Font("Verdana", 20F);
-            this.CancelButton.Location = new System.Drawing.Point(462, 417);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(136, 46);
-            this.CancelButton.TabIndex = 4;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // NextButton
-            // 
-            this.NextButton.Font = new System.Drawing.Font("Verdana", 20F);
-            this.NextButton.Location = new System.Drawing.Point(632, 417);
-            this.NextButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(136, 46);
-            this.NextButton.TabIndex = 4;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SelectForm
             // 

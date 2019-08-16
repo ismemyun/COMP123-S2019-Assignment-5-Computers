@@ -52,9 +52,12 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             //rows[rowIndex].Selected = true;
 
             
-                outputString = cells[2].Value.ToString() + " " + cells[3].Value.ToString() + 
-                " Priced at: $" + cells[1].Value.ToString();
-            
+                outputString = cells[(int)ProductField.MANUFACTURER].Value.ToString() +
+                " " +
+                cells[(int)ProductField.MODEL].Value.ToString() + 
+                " Priced at: " +
+                decimal.Parse(cells[(int)ProductField.COST].Value.ToString()).ToString("$###,###.##");
+
             SelectionTextBox.Text = outputString;
 
             Program.product.productID=short.Parse(cells[(int)ProductField.PRODUCT_ID].Value.ToString());

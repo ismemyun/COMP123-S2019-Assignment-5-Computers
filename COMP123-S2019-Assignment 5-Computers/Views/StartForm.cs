@@ -31,6 +31,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
         private void LoadOrderButton_Click(object sender, EventArgs e)
         {
             Program.productInfoForm.Show();
+            Program.productInfoForm.OpenFileDialog();
             this.Hide();
 
         }
