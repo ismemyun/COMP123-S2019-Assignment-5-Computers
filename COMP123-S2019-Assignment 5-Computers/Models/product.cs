@@ -39,6 +39,8 @@ namespace COMP123_S2019_Assignment_5_Computers.Models
         MOUST_TYPE,
         POWER,
         WEBCAM
+        
+        
     }
 
     public partial class Product

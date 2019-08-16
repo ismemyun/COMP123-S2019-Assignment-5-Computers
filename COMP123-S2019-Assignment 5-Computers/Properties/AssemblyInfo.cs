@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
 [assembly: AssemblyTitle("DollarComputer System")]
-[assembly: AssemblyDescription("website: www.fly.ca")]
+[assembly: AssemblyDescription("website: www.fly.ca Phone: 458-487-7856")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ChuYun")]
 [assembly: AssemblyProduct("DollarComputer System")]

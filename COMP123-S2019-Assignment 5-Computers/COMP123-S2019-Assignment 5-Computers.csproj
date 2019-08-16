@@ -43,7 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>computer_logo2.ico</ApplicationIcon>
+    <ApplicationIcon>DollarComputer.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -158,6 +158,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_logo2.ico" />
+    <Content Include="DollarComputer.ico" />
+    <None Include="Resources\computer02.png" />
     <None Include="Resources\computer_logo3.png" />
   </ItemGroup>
   <ItemGroup />

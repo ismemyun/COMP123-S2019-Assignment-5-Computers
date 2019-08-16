@@ -81,6 +81,22 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
                         Program.product.GPU_Type = inputStream.ReadLine();
                         Program.product.webcam = inputStream.ReadLine();
 
+                        Program.product.RAM_type = inputStream.ReadLine();
+                        Program.product.displaytype = inputStream.ReadLine();
+                        Program.product.resolution = inputStream.ReadLine();
+                        Program.product.CPU_Class = inputStream.ReadLine();
+                        Program.product.HDD_speed = inputStream.ReadLine();
+                        Program.product.optical_drive = inputStream.ReadLine();
+                        Program.product.Audio_type = inputStream.ReadLine();
+                        Program.product.LAN = inputStream.ReadLine();
+                        Program.product.WIFI = inputStream.ReadLine();
+                        Program.product.weight = inputStream.ReadLine();
+                        Program.product.height = inputStream.ReadLine();
+                        Program.product.depth = inputStream.ReadLine();
+                        Program.product.width = inputStream.ReadLine();
+                        Program.product.moust_type = inputStream.ReadLine();
+                        Program.product.power = inputStream.ReadLine();
+
                         //cleanup
                         inputStream.Close();
                         inputStream.Dispose();
@@ -124,6 +140,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             WabcamTextBox.Text = Program.product.webcam;
         }
 
+        //This is a event handler for ProductInfoSaveToolStripMenuItem_Click event.
         private void ProductInfoSaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //configure the file dialog
@@ -157,7 +174,21 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
                     outputStream.WriteLine(Program.product.HDD_size);
                     outputStream.WriteLine(Program.product.GPU_Type);
                     outputStream.WriteLine(Program.product.webcam);
-
+                    outputStream.WriteLine(Program.product.RAM_type);
+                    outputStream.WriteLine(Program.product.displaytype);
+                    outputStream.WriteLine(Program.product.resolution);
+                    outputStream.WriteLine(Program.product.CPU_Class);
+                    outputStream.WriteLine(Program.product.HDD_speed);
+                    outputStream.WriteLine(Program.product.optical_drive);
+                    outputStream.WriteLine(Program.product.Audio_type);
+                    outputStream.WriteLine(Program.product.LAN);
+                    outputStream.WriteLine(Program.product.WIFI);
+                    outputStream.WriteLine(Program.product.weight);
+                    outputStream.WriteLine(Program.product.height);
+                    outputStream.WriteLine(Program.product.depth);
+                    outputStream.WriteLine(Program.product.width);
+                    outputStream.WriteLine(Program.product.moust_type);
+                    outputStream.WriteLine(Program.product.power);
 
                     //cleeanup
                     outputStream.Close();
