@@ -33,6 +33,8 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /// 
+        //This is a event handler for SplashTime Tick event.
         private void SplashTime_Tick(object sender, EventArgs e)
         {
             SplashTime.Enabled = false;

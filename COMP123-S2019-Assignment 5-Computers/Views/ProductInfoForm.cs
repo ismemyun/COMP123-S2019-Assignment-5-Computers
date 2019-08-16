@@ -19,34 +19,35 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             InitializeComponent();
         }
 
+        //This is a event handler for SelectAnotherProductToolStripMenuItem Click event.
         private void SelectAnotherProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.selectForm.Show();
             this.Hide();
         }
 
-        private void ProductInfoForm_Load(object sender, EventArgs e)
-        {
-            //OpenFileDialog();
-        }
-
+        //This is a event handler for ExitToolStripMenuItem Click event.
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //This is a event handler for NextButton Click event.
         private void NextButton_Click(object sender, EventArgs e)
         {
             Program.orderForm.Show();
             Program.selectForm.Hide();
         }
 
+        //This is a event handler for ProductInfoOpenToolStripMenuItem Click event.
         private void ProductInfoOpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog();
             //OpenFileDialog(sender,e);
         }
-        public  void OpenFileDialog()
+
+        //This is a method for OpenFileDialog.
+        public void OpenFileDialog()
         {
             //configure the file dialog
             ProductInfoOpenFileDialog.FileName = "Product.txt";
@@ -64,7 +65,8 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
                         File.Open(ProductInfoOpenFileDialog.FileName, FileMode.Open)))
                     {
 
-                        Program.product.productID=short.Parse(inputStream.ReadLine());
+                        //assign value to product class.
+                        Program.product.productID = short.Parse(inputStream.ReadLine());
                         Program.product.condition = inputStream.ReadLine();
                         Program.product.cost = decimal.Parse(inputStream.ReadLine());
                         Program.product.platform = inputStream.ReadLine();
@@ -101,7 +103,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
                         inputStream.Close();
                         inputStream.Dispose();
                     }
-                    //NextButton_Click(sender, e);
+                    
                 }
                 catch (IOException exception)
                 {
@@ -110,21 +112,29 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-
+                DisplayProductInfo();
             }
-            DisplayProductInfo();
+            else
+            {
+                Program.startForm.Show();
+                this.Hide();
+            }
+            
         }
 
+        //This is a event handler for ProductInfoForm Activated event.
         private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
             DisplayProductInfo();
         }
 
+        //This is a method for Displaying product information.
         private void DisplayProductInfo()
         {
             ProductIDTextBox.Text = Program.product.productID.ToString();
             ConditionTextBox.Text = Program.product.condition;
-            CostTextBox.Text = ((double)Program.product.cost).ToString("$###,###.##");
+            //CostTextBox.Text = ((double)Program.product.cost).ToString("$###,###.##");
+            CostTextBox.Text = String.Format("{0:C}",Program.product.cost);
             PlatformTextBox.Text = Program.product.platform;
             OSTextBox.Text = Program.product.OS;
             ManufacturerTextBox.Text = Program.product.manufacturer;

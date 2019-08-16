@@ -56,9 +56,9 @@
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
             this.label1.Location = new System.Drawing.Point(235, 337);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 48);
+            this.label1.Size = new System.Drawing.Size(337, 48);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Welcome to FiY";
+            this.label1.Text = "Welcome to FLY";
             // 
             // SplashForm
             // 

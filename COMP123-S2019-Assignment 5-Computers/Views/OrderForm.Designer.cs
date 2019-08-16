@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.OrderMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OrderFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OrderPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OrderExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OrderEditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OrderHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OrderAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductPrintForm = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             this.TotalLine = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.BackButton = new System.Windows.Forms.Button();
@@ -84,9 +84,9 @@
             // OrderMenuStrip
             // 
             this.OrderMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.FileToolStripMenuItem,
-            this.EditToolStripMenuItem,
-            this.HelpToolStripMenuItem});
+            this.OrderFileToolStripMenuItem,
+            this.OrderEditToolStripMenuItem,
+            this.OrderHelpToolStripMenuItem});
             this.OrderMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.OrderMenuStrip.Name = "OrderMenuStrip";
             this.OrderMenuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -94,73 +94,73 @@
             this.OrderMenuStrip.TabIndex = 0;
             this.OrderMenuStrip.Text = "menuStrip1";
             // 
-            // FileToolStripMenuItem
+            // OrderFileToolStripMenuItem
             // 
-            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PrintToolStripMenuItem,
-            this.ExitToolStripMenuItem});
-            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
-            this.FileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.FileToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.FileToolStripMenuItem.Text = "&FIle";
+            this.OrderFileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OrderPrintToolStripMenuItem,
+            this.OrderExitToolStripMenuItem});
+            this.OrderFileToolStripMenuItem.Name = "OrderFileToolStripMenuItem";
+            this.OrderFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.OrderFileToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.OrderFileToolStripMenuItem.Text = "&FIle";
             // 
-            // PrintToolStripMenuItem
+            // OrderPrintToolStripMenuItem
             // 
-            this.PrintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("PrintToolStripMenuItem.Image")));
-            this.PrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem";
-            this.PrintToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.PrintToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.PrintToolStripMenuItem.Text = "&Print";
-            this.PrintToolStripMenuItem.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
+            this.OrderPrintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("OrderPrintToolStripMenuItem.Image")));
+            this.OrderPrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.OrderPrintToolStripMenuItem.Name = "OrderPrintToolStripMenuItem";
+            this.OrderPrintToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.OrderPrintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.OrderPrintToolStripMenuItem.Text = "&Print";
+            this.OrderPrintToolStripMenuItem.Click += new System.EventHandler(this.OrderPrintToolStripMenuItem_Click);
             // 
-            // ExitToolStripMenuItem
+            // OrderExitToolStripMenuItem
             // 
-            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.ExitToolStripMenuItem.Text = "E&xit";
-            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            this.OrderExitToolStripMenuItem.Name = "OrderExitToolStripMenuItem";
+            this.OrderExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.OrderExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.OrderExitToolStripMenuItem.Text = "E&xit";
+            this.OrderExitToolStripMenuItem.Click += new System.EventHandler(this.OrderExitToolStripMenuItem_Click);
             // 
-            // EditToolStripMenuItem
+            // OrderEditToolStripMenuItem
             // 
-            this.EditToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OrderEditToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator4,
             this.backToolStripMenuItem});
-            this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
-            this.EditToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.EditToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.EditToolStripMenuItem.Text = "&Edit";
+            this.OrderEditToolStripMenuItem.Name = "OrderEditToolStripMenuItem";
+            this.OrderEditToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.OrderEditToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.OrderEditToolStripMenuItem.Text = "&Edit";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(139, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
             this.backToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.backToolStripMenuItem.Text = "&Back";
-            this.backToolStripMenuItem.Click += new System.EventHandler(this.BackToolStripMenuItem_Click);
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.OrderBackToolStripMenuItem_Click);
             // 
-            // HelpToolStripMenuItem
+            // OrderHelpToolStripMenuItem
             // 
-            this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AboutToolStripMenuItem});
-            this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
-            this.HelpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.HelpToolStripMenuItem.Text = "&Help";
+            this.OrderHelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OrderAboutToolStripMenuItem});
+            this.OrderHelpToolStripMenuItem.Name = "OrderHelpToolStripMenuItem";
+            this.OrderHelpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.OrderHelpToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.OrderHelpToolStripMenuItem.Text = "&Help";
             // 
-            // AboutToolStripMenuItem
+            // OrderAboutToolStripMenuItem
             // 
-            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.AboutToolStripMenuItem.Text = "&About";
-            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            this.OrderAboutToolStripMenuItem.Name = "OrderAboutToolStripMenuItem";
+            this.OrderAboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.OrderAboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.OrderAboutToolStripMenuItem.Text = "&About";
+            this.OrderAboutToolStripMenuItem.Click += new System.EventHandler(this.OrderAboutToolStripMenuItem_Click);
             // 
             // ProductPrintForm
             // 
@@ -189,7 +189,7 @@
             this.BackButton.TabIndex = 5;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackToolStripMenuItem_Click);
+            this.BackButton.Click += new System.EventHandler(this.OrderBackToolStripMenuItem_Click);
             // 
             // SystemComponentsGroupBox
             // 
@@ -503,7 +503,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            this.button1.Click += new System.EventHandler(this.OrderExitToolStripMenuItem_Click);
             // 
             // ComputerPictureBox
             // 
@@ -549,13 +549,13 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip OrderMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem PrintToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem EditToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OrderFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OrderPrintToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OrderExitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OrderEditToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OrderHelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OrderAboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
         private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm ProductPrintForm;
         private Microsoft.VisualBasic.PowerPacks.LineShape TotalLine;

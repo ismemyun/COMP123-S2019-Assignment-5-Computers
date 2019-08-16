@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.ProductInfoMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProductInfoFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductInfoOpenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductInfoSaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProduectInfoExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProductInfoEditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductIDLabel = new System.Windows.Forms.Label();
             this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
@@ -83,8 +83,8 @@
             // ProductInfoMenuStrip
             // 
             this.ProductInfoMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
+            this.ProductInfoFileToolStripMenuItem,
+            this.ProductInfoEditToolStripMenuItem});
             this.ProductInfoMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.ProductInfoMenuStrip.Name = "ProductInfoMenuStrip";
             this.ProductInfoMenuStrip.Padding = new System.Windows.Forms.Padding(10, 3, 0, 3);
@@ -92,24 +92,24 @@
             this.ProductInfoMenuStrip.TabIndex = 0;
             this.ProductInfoMenuStrip.Text = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // ProductInfoFileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ProductInfoFileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ProductInfoOpenToolStripMenuItem,
             this.ProductInfoSaveToolStripMenuItem,
             this.ProduectInfoExitToolStripMenuItem});
-            this.fileToolStripMenuItem.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.fileToolStripMenuItem.ShowShortcutKeys = false;
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(38, 19);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.ProductInfoFileToolStripMenuItem.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.ProductInfoFileToolStripMenuItem.Name = "ProductInfoFileToolStripMenuItem";
+            this.ProductInfoFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.ProductInfoFileToolStripMenuItem.ShowShortcutKeys = false;
+            this.ProductInfoFileToolStripMenuItem.Size = new System.Drawing.Size(38, 19);
+            this.ProductInfoFileToolStripMenuItem.Text = "&File";
             // 
             // ProductInfoOpenToolStripMenuItem
             // 
             this.ProductInfoOpenToolStripMenuItem.Name = "ProductInfoOpenToolStripMenuItem";
             this.ProductInfoOpenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProductInfoOpenToolStripMenuItem.Text = "&Open";
             this.ProductInfoOpenToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoOpenToolStripMenuItem_Click);
             // 
@@ -117,7 +117,7 @@
             // 
             this.ProductInfoSaveToolStripMenuItem.Name = "ProductInfoSaveToolStripMenuItem";
             this.ProductInfoSaveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProductInfoSaveToolStripMenuItem.Text = "&Save";
             this.ProductInfoSaveToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoSaveToolStripMenuItem_Click);
             // 
@@ -125,18 +125,18 @@
             // 
             this.ProduectInfoExitToolStripMenuItem.Name = "ProduectInfoExitToolStripMenuItem";
             this.ProduectInfoExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProduectInfoExitToolStripMenuItem.Text = "E&xit";
             this.ProduectInfoExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
-            // editToolStripMenuItem
+            // ProductInfoEditToolStripMenuItem
             // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ProductInfoEditToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SelectAnotherProductToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(41, 19);
-            this.editToolStripMenuItem.Text = "&Edit";
+            this.ProductInfoEditToolStripMenuItem.Name = "ProductInfoEditToolStripMenuItem";
+            this.ProductInfoEditToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.ProductInfoEditToolStripMenuItem.Size = new System.Drawing.Size(41, 19);
+            this.ProductInfoEditToolStripMenuItem.Text = "&Edit";
             // 
             // SelectAnotherProductToolStripMenuItem
             // 
@@ -570,7 +570,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Info Form";
             this.Activated += new System.EventHandler(this.ProductInfoForm_Activated);
-            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
@@ -585,11 +584,11 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip ProductInfoMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ProductInfoFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ProductInfoOpenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ProductInfoSaveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ProduectInfoExitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ProductInfoEditToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SelectAnotherProductToolStripMenuItem;
         private System.Windows.Forms.Label ProductIDLabel;
         private System.Windows.Forms.GroupBox ProductInfoGroupBox;
