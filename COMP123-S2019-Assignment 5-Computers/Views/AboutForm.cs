@@ -102,9 +102,6 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
         }
         #endregion
 
-        private void AboutForm_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

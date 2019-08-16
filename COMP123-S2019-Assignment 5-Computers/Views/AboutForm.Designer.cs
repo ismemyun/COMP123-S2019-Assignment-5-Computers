@@ -27,7 +27,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.ProductNameLabel = new System.Windows.Forms.Label();
@@ -43,8 +42,8 @@
             // tableLayoutPanel
             // 
             this.tableLayoutPanel.ColumnCount = 2;
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67F));
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.20623F));
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.79377F));
             this.tableLayoutPanel.Controls.Add(this.logoPictureBox, 0, 0);
             this.tableLayoutPanel.Controls.Add(this.ProductNameLabel, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.VersionLabel, 1, 1);
@@ -67,12 +66,11 @@
             // 
             // logoPictureBox
             // 
-            this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
+            this.logoPictureBox.Image = global::COMP123_S2019_Assignment_5_Computers.Properties.Resources.computer_logo2;
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-            this.logoPictureBox.Size = new System.Drawing.Size(131, 239);
+            this.logoPictureBox.Size = new System.Drawing.Size(169, 239);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
@@ -81,11 +79,11 @@
             // 
             this.ProductNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ProductNameLabel.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductNameLabel.Location = new System.Drawing.Point(143, 0);
+            this.ProductNameLabel.Location = new System.Drawing.Point(181, 0);
             this.ProductNameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.ProductNameLabel.MaximumSize = new System.Drawing.Size(0, 16);
             this.ProductNameLabel.Name = "ProductNameLabel";
-            this.ProductNameLabel.Size = new System.Drawing.Size(271, 16);
+            this.ProductNameLabel.Size = new System.Drawing.Size(233, 16);
             this.ProductNameLabel.TabIndex = 19;
             this.ProductNameLabel.Text = "System Name";
             this.ProductNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -94,11 +92,11 @@
             // 
             this.VersionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VersionLabel.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VersionLabel.Location = new System.Drawing.Point(143, 24);
+            this.VersionLabel.Location = new System.Drawing.Point(181, 24);
             this.VersionLabel.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.VersionLabel.MaximumSize = new System.Drawing.Size(0, 16);
             this.VersionLabel.Name = "VersionLabel";
-            this.VersionLabel.Size = new System.Drawing.Size(271, 16);
+            this.VersionLabel.Size = new System.Drawing.Size(233, 16);
             this.VersionLabel.TabIndex = 0;
             this.VersionLabel.Text = "Version";
             this.VersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,11 +105,11 @@
             // 
             this.CopyrightLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CopyrightLabel.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CopyrightLabel.Location = new System.Drawing.Point(143, 48);
+            this.CopyrightLabel.Location = new System.Drawing.Point(181, 48);
             this.CopyrightLabel.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.CopyrightLabel.MaximumSize = new System.Drawing.Size(0, 16);
             this.CopyrightLabel.Name = "CopyrightLabel";
-            this.CopyrightLabel.Size = new System.Drawing.Size(271, 16);
+            this.CopyrightLabel.Size = new System.Drawing.Size(233, 16);
             this.CopyrightLabel.TabIndex = 21;
             this.CopyrightLabel.Text = "Copyright";
             this.CopyrightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,11 +118,11 @@
             // 
             this.CompanyNameLbabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CompanyNameLbabel.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CompanyNameLbabel.Location = new System.Drawing.Point(143, 72);
+            this.CompanyNameLbabel.Location = new System.Drawing.Point(181, 72);
             this.CompanyNameLbabel.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.CompanyNameLbabel.MaximumSize = new System.Drawing.Size(0, 16);
             this.CompanyNameLbabel.Name = "CompanyNameLbabel";
-            this.CompanyNameLbabel.Size = new System.Drawing.Size(271, 16);
+            this.CompanyNameLbabel.Size = new System.Drawing.Size(233, 16);
             this.CompanyNameLbabel.TabIndex = 22;
             this.CompanyNameLbabel.Text = "Company Name";
             this.CompanyNameLbabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,13 +131,13 @@
             // 
             this.DescriptionTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DescriptionTextBox.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DescriptionTextBox.Location = new System.Drawing.Point(143, 99);
+            this.DescriptionTextBox.Location = new System.Drawing.Point(181, 99);
             this.DescriptionTextBox.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.DescriptionTextBox.Multiline = true;
             this.DescriptionTextBox.Name = "DescriptionTextBox";
             this.DescriptionTextBox.ReadOnly = true;
             this.DescriptionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.DescriptionTextBox.Size = new System.Drawing.Size(271, 116);
+            this.DescriptionTextBox.Size = new System.Drawing.Size(233, 116);
             this.DescriptionTextBox.TabIndex = 23;
             this.DescriptionTextBox.TabStop = false;
             this.DescriptionTextBox.Text = "Description";
@@ -170,7 +168,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AboutForm";
-            this.Load += new System.EventHandler(this.AboutForm_Load);
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();

@@ -74,7 +74,7 @@
             // 
             // LogoPictureBox
             // 
-            this.LogoPictureBox.Image = global::COMP123_S2019_Assignment_5_Computers.Properties.Resources.computer_logo21;
+            this.LogoPictureBox.Image = global::COMP123_S2019_Assignment_5_Computers.Properties.Resources.computer_logo3;
             this.LogoPictureBox.Location = new System.Drawing.Point(95, 72);
             this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(7);
             this.LogoPictureBox.Name = "LogoPictureBox";
@@ -103,11 +103,11 @@
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.LoadOrderButton);
             this.Controls.Add(this.StartOrderButton);
-            this.Font = new System.Drawing.Font("新細明體", 20F);
+            this.Font = new System.Drawing.Font("PMingLiU", 20F);
             this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Welcome to FiY";
+            this.Text = "Welcome to FLY";
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

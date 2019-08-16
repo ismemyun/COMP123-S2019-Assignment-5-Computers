@@ -42,7 +42,7 @@
             // 
             // LogoPictureBox
             // 
-            this.LogoPictureBox.Image = global::COMP123_S2019_Assignment_5_Computers.Properties.Resources.computer_logo21;
+            this.LogoPictureBox.Image = global::COMP123_S2019_Assignment_5_Computers.Properties.Resources.computer_logo3;
             this.LogoPictureBox.Location = new System.Drawing.Point(292, 59);
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.Size = new System.Drawing.Size(200, 179);

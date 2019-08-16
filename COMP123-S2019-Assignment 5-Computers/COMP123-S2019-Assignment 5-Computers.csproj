@@ -157,10 +157,8 @@
     <None Include="Resources\computer_logo2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\computer_logo2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="computer_logo2.ico" />
+    <None Include="Resources\computer_logo3.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />

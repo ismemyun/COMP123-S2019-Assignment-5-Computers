@@ -73,7 +73,7 @@
             this.SelectAnotherButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
-            this.ProduceInfoOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ProductInfoOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.ProductInfoSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ProductInfoMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
@@ -107,21 +107,21 @@
             // ProductInfoOpenToolStripMenuItem
             // 
             this.ProductInfoOpenToolStripMenuItem.Name = "ProductInfoOpenToolStripMenuItem";
-            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.ProductInfoOpenToolStripMenuItem.Text = "&Open";
             this.ProductInfoOpenToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoOpenToolStripMenuItem_Click);
             // 
             // ProductInfoSaveToolStripMenuItem
             // 
             this.ProductInfoSaveToolStripMenuItem.Name = "ProductInfoSaveToolStripMenuItem";
-            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.ProductInfoSaveToolStripMenuItem.Text = "&Save";
             this.ProductInfoSaveToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoSaveToolStripMenuItem_Click);
             // 
             // ProduectInfoExitToolStripMenuItem
             // 
             this.ProduectInfoExitToolStripMenuItem.Name = "ProduectInfoExitToolStripMenuItem";
-            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.ProduectInfoExitToolStripMenuItem.Text = "&Exit";
             this.ProduectInfoExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -167,7 +167,6 @@
             this.ProductInfoGroupBox.TabIndex = 2;
             this.ProductInfoGroupBox.TabStop = false;
             this.ProductInfoGroupBox.Text = "Product Info";
-            this.ProductInfoGroupBox.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // ModelTextBox
             // 
@@ -315,7 +314,6 @@
             this.TechSpecsGroupBox.TabIndex = 2;
             this.TechSpecsGroupBox.TabStop = false;
             this.TechSpecsGroupBox.Text = "Tech Specs";
-            this.TechSpecsGroupBox.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // WabcamTextBox
             // 
@@ -518,9 +516,9 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // ProduceInfoOpenFileDialog
+            // ProductInfoOpenFileDialog
             // 
-            this.ProduceInfoOpenFileDialog.FileName = "openFileDialog1";
+            this.ProductInfoOpenFileDialog.FileName = "openFileDialog1";
             // 
             // ProductInfoForm
             // 
@@ -608,7 +606,7 @@
         private System.Windows.Forms.Button SelectAnotherButton;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button NextButton;
-        private System.Windows.Forms.OpenFileDialog ProduceInfoOpenFileDialog;
+        private System.Windows.Forms.OpenFileDialog ProductInfoOpenFileDialog;
         private System.Windows.Forms.SaveFileDialog ProductInfoSaveFileDialog;
     }
 }

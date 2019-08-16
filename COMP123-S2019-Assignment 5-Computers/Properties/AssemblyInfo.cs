@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("COMP123-S2019-Assignment 5-Computers")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("DollarComputer System")]
+[assembly: AssemblyDescription("website: www.fly.ca")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("COMP123-S2019-Assignment 5-Computers")]
+[assembly: AssemblyCompany("ChuYun")]
+[assembly: AssemblyProduct("DollarComputer System")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
