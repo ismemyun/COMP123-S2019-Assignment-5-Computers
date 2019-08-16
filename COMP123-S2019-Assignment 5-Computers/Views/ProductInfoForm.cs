@@ -32,7 +32,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
 
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
-            OpenFileDialog();
+            //OpenFileDialog();
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,6 +89,24 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             }
         }
 
-
+        private void ProductInfoForm_Activated(object sender, EventArgs e)
+        {
+            ProductIDTextBox.Text = Program.product.productID.ToString();
+            ConditionTextBox.Text = Program.product.condition;
+            CostTextBox.Text = Program.product.cost.ToString();
+            PlatformTextBox.Text = Program.product.platform;
+            OSTextBox.Text = Program.product.OS;
+            ManufacturerTextBox.Text = Program.product.manufacturer;
+            ModelTextBox.Text = Program.product.model;
+            MemoryTextBox.Text = Program.product.RAM_size;
+            CPUBrandTextBox.Text = Program.product.CPU_brand;
+            CPUTypeTextBox.Text = Program.product.CPU_type;
+            LCDSizeTextBox.Text = Program.product.screensize;
+            CPUnumberTextBox.Text = Program.product.CPU_number;
+            CPUspeedTextBox.Text = Program.product.CPU_speed;
+            HDDTextBox.Text = Program.product.HDD_size;
+            GPUTypeTextBox.Text = Program.product.GPU_Type;
+            WabcamTextBox.Text = Program.product.webcam;
+        }
     }
 }

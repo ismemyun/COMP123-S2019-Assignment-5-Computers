@@ -52,16 +52,16 @@
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.TechSpecsGroupBox = new System.Windows.Forms.GroupBox();
             this.WabcamTextBox = new System.Windows.Forms.TextBox();
-            this.CPUTypeTextBox = new System.Windows.Forms.TextBox();
+            this.GPUTypeTextBox = new System.Windows.Forms.TextBox();
             this.HDDTextBox = new System.Windows.Forms.TextBox();
             this.CPUspeedTextBox = new System.Windows.Forms.TextBox();
             this.CPUnumberTextBox = new System.Windows.Forms.TextBox();
             this.LCDSizeTextBox = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.CPUTypeTextBox = new System.Windows.Forms.TextBox();
             this.CPUBrandTextBox = new System.Windows.Forms.TextBox();
             this.MemoryTextBox = new System.Windows.Forms.TextBox();
             this.WabcamLabel = new System.Windows.Forms.Label();
-            this.CPUTypeLabel = new System.Windows.Forms.Label();
+            this.GPUTypeLabel = new System.Windows.Forms.Label();
             this.CPUspeedLabel = new System.Windows.Forms.Label();
             this.CPUnumberLabel = new System.Windows.Forms.Label();
             this.HDDLabel = new System.Windows.Forms.Label();
@@ -106,20 +106,20 @@
             // ProductInfoOpenToolStripMenuItem
             // 
             this.ProductInfoOpenToolStripMenuItem.Name = "ProductInfoOpenToolStripMenuItem";
-            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProductInfoOpenToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.ProductInfoOpenToolStripMenuItem.Text = "&Open";
             this.ProductInfoOpenToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoOpenToolStripMenuItem_Click);
             // 
             // ProductInfoSaveToolStripMenuItem
             // 
             this.ProductInfoSaveToolStripMenuItem.Name = "ProductInfoSaveToolStripMenuItem";
-            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProductInfoSaveToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.ProductInfoSaveToolStripMenuItem.Text = "&Save";
             // 
             // ProduectInfoExitToolStripMenuItem
             // 
             this.ProduectInfoExitToolStripMenuItem.Name = "ProduectInfoExitToolStripMenuItem";
-            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProduectInfoExitToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.ProduectInfoExitToolStripMenuItem.Text = "&Exit";
             this.ProduectInfoExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -288,16 +288,16 @@
             // TechSpecsGroupBox
             // 
             this.TechSpecsGroupBox.Controls.Add(this.WabcamTextBox);
-            this.TechSpecsGroupBox.Controls.Add(this.CPUTypeTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.GPUTypeTextBox);
             this.TechSpecsGroupBox.Controls.Add(this.HDDTextBox);
             this.TechSpecsGroupBox.Controls.Add(this.CPUspeedTextBox);
             this.TechSpecsGroupBox.Controls.Add(this.CPUnumberTextBox);
             this.TechSpecsGroupBox.Controls.Add(this.LCDSizeTextBox);
-            this.TechSpecsGroupBox.Controls.Add(this.textBox14);
+            this.TechSpecsGroupBox.Controls.Add(this.CPUTypeTextBox);
             this.TechSpecsGroupBox.Controls.Add(this.CPUBrandTextBox);
             this.TechSpecsGroupBox.Controls.Add(this.MemoryTextBox);
             this.TechSpecsGroupBox.Controls.Add(this.WabcamLabel);
-            this.TechSpecsGroupBox.Controls.Add(this.CPUTypeLabel);
+            this.TechSpecsGroupBox.Controls.Add(this.GPUTypeLabel);
             this.TechSpecsGroupBox.Controls.Add(this.CPUspeedLabel);
             this.TechSpecsGroupBox.Controls.Add(this.CPUnumberLabel);
             this.TechSpecsGroupBox.Controls.Add(this.HDDLabel);
@@ -324,14 +324,14 @@
             this.WabcamTextBox.Size = new System.Drawing.Size(180, 27);
             this.WabcamTextBox.TabIndex = 3;
             // 
-            // CPUTypeTextBox
+            // GPUTypeTextBox
             // 
-            this.CPUTypeTextBox.Location = new System.Drawing.Point(642, 95);
-            this.CPUTypeTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.CPUTypeTextBox.Name = "CPUTypeTextBox";
-            this.CPUTypeTextBox.ReadOnly = true;
-            this.CPUTypeTextBox.Size = new System.Drawing.Size(180, 27);
-            this.CPUTypeTextBox.TabIndex = 3;
+            this.GPUTypeTextBox.Location = new System.Drawing.Point(642, 95);
+            this.GPUTypeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.GPUTypeTextBox.Name = "GPUTypeTextBox";
+            this.GPUTypeTextBox.ReadOnly = true;
+            this.GPUTypeTextBox.Size = new System.Drawing.Size(180, 27);
+            this.GPUTypeTextBox.TabIndex = 3;
             // 
             // HDDTextBox
             // 
@@ -369,14 +369,14 @@
             this.LCDSizeTextBox.Size = new System.Drawing.Size(124, 27);
             this.LCDSizeTextBox.TabIndex = 3;
             // 
-            // textBox14
+            // CPUTypeTextBox
             // 
-            this.textBox14.Location = new System.Drawing.Point(146, 147);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(124, 27);
-            this.textBox14.TabIndex = 3;
+            this.CPUTypeTextBox.Location = new System.Drawing.Point(146, 147);
+            this.CPUTypeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CPUTypeTextBox.Name = "CPUTypeTextBox";
+            this.CPUTypeTextBox.ReadOnly = true;
+            this.CPUTypeTextBox.Size = new System.Drawing.Size(124, 27);
+            this.CPUTypeTextBox.TabIndex = 3;
             // 
             // CPUBrandTextBox
             // 
@@ -405,14 +405,14 @@
             this.WabcamLabel.TabIndex = 1;
             this.WabcamLabel.Text = "Wabcam";
             // 
-            // CPUTypeLabel
+            // GPUTypeLabel
             // 
-            this.CPUTypeLabel.Location = new System.Drawing.Point(549, 101);
-            this.CPUTypeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.CPUTypeLabel.Name = "CPUTypeLabel";
-            this.CPUTypeLabel.Size = new System.Drawing.Size(88, 18);
-            this.CPUTypeLabel.TabIndex = 1;
-            this.CPUTypeLabel.Text = "CPU Type";
+            this.GPUTypeLabel.Location = new System.Drawing.Point(549, 101);
+            this.GPUTypeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GPUTypeLabel.Name = "GPUTypeLabel";
+            this.GPUTypeLabel.Size = new System.Drawing.Size(88, 18);
+            this.GPUTypeLabel.TabIndex = 1;
+            this.GPUTypeLabel.Text = "GPU Type";
             // 
             // CPUspeedLabel
             // 
@@ -545,7 +545,8 @@
             this.MaximizeBox = false;
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProductInfoForm";
+            this.Text = "Product Info Form";
+            this.Activated += new System.EventHandler(this.ProductInfoForm_Activated);
             this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();
@@ -583,11 +584,11 @@
         private System.Windows.Forms.Label ManufacturerLabel;
         private System.Windows.Forms.Label PlatformLabel;
         private System.Windows.Forms.GroupBox TechSpecsGroupBox;
-        private System.Windows.Forms.TextBox CPUTypeTextBox;
+        private System.Windows.Forms.TextBox GPUTypeTextBox;
         private System.Windows.Forms.TextBox HDDTextBox;
         private System.Windows.Forms.TextBox CPUBrandTextBox;
         private System.Windows.Forms.TextBox MemoryTextBox;
-        private System.Windows.Forms.Label CPUTypeLabel;
+        private System.Windows.Forms.Label GPUTypeLabel;
         private System.Windows.Forms.Label HDDLabel;
         private System.Windows.Forms.Label CPUBrandLabel;
         private System.Windows.Forms.Label MemoryLabel;
@@ -597,7 +598,7 @@
         private System.Windows.Forms.Label LCDSizeLabel;
         private System.Windows.Forms.TextBox WabcamTextBox;
         private System.Windows.Forms.TextBox CPUspeedTextBox;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox CPUTypeTextBox;
         private System.Windows.Forms.Label WabcamLabel;
         private System.Windows.Forms.Label CPUspeedLabel;
         private System.Windows.Forms.Label CPUTpyeLabel;
