@@ -11,7 +11,7 @@ using System.Windows.Forms;
 /*
  * Name : Chuyun Yang
  * Student : 301038102
- * Date : 2019/08/01
+ * Date : 2019/08/02
  * Description : This is a SplashForm.
  */
 namespace COMP123_S2019_Assignment_5_Computers.Views
