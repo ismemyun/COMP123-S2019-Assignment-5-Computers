@@ -10,6 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Name : Chuyun Yang
+ * Student : 301038102
+ * Date : 2019/08/01
+ * Description : This is a ProductInfomationForm for displaying the details of product customers select.
+ */
 namespace COMP123_S2019_Assignment_5_Computers.Views
 {
     public partial class ProductInfoForm : Form
@@ -205,7 +211,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
                     outputStream.Dispose();
 
                 }
-                MessageBox.Show("File Saved SuccessFully!", "Saving...",
+                MessageBox.Show("File Saved Successfully!", "Saving...",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

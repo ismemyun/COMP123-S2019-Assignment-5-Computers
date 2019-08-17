@@ -7,6 +7,12 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Name : Chuyun Yang
+ * Student : 301038102
+ * Date : 2019/08/01
+ * Description : This is a form about company information.
+ */
 namespace COMP123_S2019_Assignment_5_Computers.Views
 {
     public partial class AboutForm : Form

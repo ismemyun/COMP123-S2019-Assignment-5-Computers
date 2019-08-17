@@ -9,6 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
 
+/*
+ * Name : Chuyun Yang
+ * Student : 301038102
+ * Date : 2019/08/01
+ * Description : This is a orderform for displaying the details of selection.
+ */
 namespace COMP123_S2019_Assignment_5_Computers.Views
 {
     public partial class OrderForm : Form

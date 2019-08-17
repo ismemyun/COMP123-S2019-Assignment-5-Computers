@@ -11,6 +11,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Name : Chuyun Yang
+ * Student : 301038102
+ * Date : 2019/08/01
+ * Description : This is a selectform for listing products.
+ */
 namespace COMP123_S2019_Assignment_5_Computers.Views
 {
     public partial class SelectForm : Form
@@ -30,7 +36,7 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             }
             //select nothing as defalut
             var rows = ProductDataGridView.Rows;
-            rows[0].Selected = false;
+            rows[0].Selected = true;
             //NextButton is desabled before selecting a product.
             NextButton.Enabled = false;
         }
@@ -46,19 +52,23 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             Program.productInfoForm.Show();
             this.Hide();
         }
+        
+
+        //This is a event handler for ProductDataGridView SelectionChanged event.
+        private void ProductDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            SelectProduct();
+            NextButton.Enabled = true;
+        }
         //This is a method for displaying the selection of product.
         private void SelectProduct()
         {
             //local scope aliases
-
             var rowIndex = ProductDataGridView.CurrentCell.RowIndex;
             var rows = ProductDataGridView.Rows;
             var columnCount = ProductDataGridView.ColumnCount;
             var cells = rows[rowIndex].Cells;
             string outputString = string.Empty;
-
-            //rows[rowIndex].Selected = true;
-
 
             outputString = cells[(int)ProductField.MANUFACTURER].Value.ToString() +
                            " " +
@@ -101,13 +111,9 @@ namespace COMP123_S2019_Assignment_5_Computers.Views
             Program.product.width = cells[(int)ProductField.WIDTH].Value.ToString();
             Program.product.moust_type = cells[(int)ProductField.MOUST_TYPE].Value.ToString();
             Program.product.power = cells[(int)ProductField.POWER].Value.ToString();
+
         }
 
-        //This is a event handler for ProductDataGridView SelectionChanged event.
-        private void ProductDataGridView_SelectionChanged(object sender, EventArgs e)
-        {
-            SelectProduct();
-            NextButton.Enabled = true;   
-        }
+        
     }
 }

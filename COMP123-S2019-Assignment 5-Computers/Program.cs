@@ -11,7 +11,6 @@ using COMP123_S2019_Assignment_5_Computers.Models;
  * Student : 301038102
  * Date : 2019/08/01
  * Description : Create a multi-form project that simulates a computer purchase.
- * Version : Ver_01-GUI
  */
 
 
@@ -26,7 +25,6 @@ namespace COMP123_S2019_Assignment_5_Computers
         public static ProductInfoForm productInfoForm;
         public static OrderForm orderForm;
         public static AboutForm aboutForm;
-
         public static Product product;
         /// <summary>
         /// The main entry point for the application.
@@ -44,10 +42,9 @@ namespace COMP123_S2019_Assignment_5_Computers
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
             aboutForm = new AboutForm();
-
             product = new Product();
 
-            Application.Run(startForm);
+            Application.Run(splashForm);
         }
     }
 }
